@@ -118,5 +118,5 @@ yarn add zod
 ~~~
 15. Instalacion Linters ()
 ~~~
-yarn add eslint
+yarn init @eslint/config
 ~~~

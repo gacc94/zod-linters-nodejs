@@ -1,5 +1,5 @@
 import {Request, Response} from "express";
-import {productType} from "../schemas/product.schema";
+import {productType} from "../schemas";
 
 class ProductController {
 
