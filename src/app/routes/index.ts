@@ -1,6 +1,6 @@
-import {Router} from "express";
-import authRouter from "./auth.route";
-import productRouter from "./product.route";
+import { Router } from 'express';
+import authRouter from './auth.route';
+import productRouter from './product.route';
 
 export interface Routes {
     path: string;
@@ -15,5 +15,5 @@ export const mainRoutes: Array<Routes> = [
     {
         path: 'product',
         router: productRouter,
-    }
-]
+    },
+];

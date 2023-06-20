@@ -1,9 +1,9 @@
-import {Router} from "express";
-import {authController} from "../controllers";
-import {schemaValidator} from "../middlewares/schema-validator";
-import {loginSchema} from "../schemas";
+import { Router } from 'express';
+import  authController  from '../controllers/auth.controller';
+import { schemaValidator } from '../middlewares/schema-validator';
+import loginSchema from '../schemas/auth.schema';
 
-const router: Router = Router()
+const router: Router = Router();
 
 router.post('/',
     schemaValidator(loginSchema),

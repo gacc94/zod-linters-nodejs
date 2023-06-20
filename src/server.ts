@@ -1,10 +1,10 @@
-import {app} from "./app/app";
+import app from './app/app';
 
-class Server {
-
-    constructor() {
-    }
-
-}
+// class Server {
+//
+//     // constructor() {
+//     // }
+//
+// }
 
 app.listen();

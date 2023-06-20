@@ -117,6 +117,34 @@ npx prisma studio --port=5558
 yarn add zod
 ~~~
 15. Instalacion Linters ()
+## Eslint
 ~~~
-yarn init @eslint/config
+yarn add -D eslint
+~~~
+~~~
+yarn add -D @typescript-eslint/parser
+~~~
+~~~
+yarn add -D eslint-config-airbnb
+~~~
+~~~
+yarn add -D @typescript-eslint/eslint-plugin
+~~~
+~~~
+yarn add eslint-plugin-import -D
+~~~
+~~~
+yarn add eslint-plugin-prettier -D
+~~~
+## Prettier
+~~~
+yarn add -D prettier
+~~~
+~~~
+yarn add -D eslint-config-prettier
+~~~
+yarn add -D eslint-plugin-prettier
+~~~
+~~~
+npx eslint --cache 
 ~~~

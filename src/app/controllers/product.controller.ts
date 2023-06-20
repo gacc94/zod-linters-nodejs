@@ -1,15 +1,16 @@
-import {Request, Response} from "express";
-import {productType} from "../schemas";
+import { Request, Response } from 'express';
+import { productType } from '../schemas/product.schema';
 
 class ProductController {
 
-    constructor() {
-    }
+    // constructor() {
+    // }
 
     async saveProduct(request: Request<unknown, unknown, productType>, response: Response) {
         try {
 
-            return response.status(200).json({body: request.body.price});
+            response.status(200)
+                .json({ body: request.body.price });
         } catch (err) {
             if (err instanceof Error) {
                 console.log(err.message);
@@ -20,7 +21,8 @@ class ProductController {
     async updateProduct(request: Request, response: Response) {
         try {
 
-            return response.status(200).json({body: request.body});
+            response.status(200)
+                .json({ body: request.body });
         } catch (err) {
             if (err instanceof Error) {
                 console.log(err.message);
@@ -30,4 +32,4 @@ class ProductController {
 
 }
 
-export const productController:ProductController = new ProductController();
+export default new ProductController();

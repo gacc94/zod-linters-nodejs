@@ -1,5 +1,5 @@
 import 'dotenv/config';
-import convict from "convict";
+import convict from 'convict';
 
 // export const config = {
 //
@@ -15,17 +15,17 @@ import convict from "convict";
 const config = convict({
     server: {
         port: {
-            doc: "Port of the server",
-            format: "Number",
+            doc: 'Port of the server',
+            format: 'Number',
             default: 3001,
-            env: "PORT",
+            env: 'PORT',
         },
     },
     env: {
-        doc: "The application environment.",
-        format: ["production", "beta", "development"],
-        default: "development",
-        env: "NODE_ENV",
+        doc: 'The application environment.',
+        format: ['production', 'beta', 'development'],
+        default: 'development',
+        env: 'NODE_ENV',
     },
     // ip: {
     //     doc: 'The IP address to bind.',
