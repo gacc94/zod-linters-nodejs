@@ -1,7 +1,7 @@
 import {Router} from "express";
 import {schemaValidator} from "../middlewares/schema-validator";
 import prdSch from "../schemas/product.schema";
-import {productController} from "../controllers/product.controller";
+import {productController} from "../controllers";
 
 const router: Router = Router()
 

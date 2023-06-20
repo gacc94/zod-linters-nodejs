@@ -1,5 +1,5 @@
 import {Router} from "express";
-import {authController} from "../controllers/auth.controller";
+import {authController} from "../controllers";
 import {schemaValidator} from "../middlewares/schema-validator";
 import {loginSchema} from "../schemas/auth.schema";
 

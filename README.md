@@ -116,3 +116,7 @@ npx prisma studio --port=5558
 ~~~
 yarn add zod
 ~~~
+15. Instalacion Linters ()
+~~~
+yarn add eslint
+~~~
