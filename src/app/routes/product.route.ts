@@ -1,15 +1,15 @@
 import {Router} from "express";
 import {schemaValidator} from "../middlewares/schema-validator";
-import prdSch from "../schemas/product.schema";
+import {saveSchema, updateSchema} from "../schemas";
 import {productController} from "../controllers";
 
 const router: Router = Router()
 
 router.post('/',
-    schemaValidator(prdSch.saveSchema),
+    schemaValidator(saveSchema),
     productController.saveProduct.bind(productController))
     .put('/:id',
-        schemaValidator(prdSch.updateSchema),
+        schemaValidator(updateSchema),
         productController.updateProduct.bind(productController) );
 
 export default router;
