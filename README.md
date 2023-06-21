@@ -143,8 +143,16 @@ yarn add -D prettier
 ~~~
 yarn add -D eslint-config-prettier
 ~~~
+~~~
 yarn add -D eslint-plugin-prettier
 ~~~
 ~~~
-npx eslint --cache 
+npx eslint --cache
+~~~
+## Husky
+~~~
+yarn add -D husky
+~~~
+~~~
+yarn add -D lint-staged
 ~~~

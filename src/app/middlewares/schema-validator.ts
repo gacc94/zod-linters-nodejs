@@ -11,7 +11,7 @@ export const schemaValidator =
             query: request.query,
         });
         console.log({ validator });
-        next();
+        return next();
     } catch (err) {
         if (err instanceof ZodError) {
             console.log(err);

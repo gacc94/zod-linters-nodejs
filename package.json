@@ -8,7 +8,10 @@
         "dev": "nodemon",
         "lint": "eslint src/**/*.ts",
         "lint-fix": "eslint --fix src/**/*.ts",
-        "pretty": "prettier --write src/**/*.ts"
+        "pretty": "prettier --write src/**/*.ts",
+        "prepare": "husky install",
+        "precommit": "yarn run lint-fix && yarn run pretty",
+        "prepush": "yarn run lint"
     },
     "dependencies": {
         "convict": "6.2.4",
@@ -31,6 +34,8 @@
         "eslint-config-prettier": "8.8.0",
         "eslint-plugin-import": "2.27.5",
         "eslint-plugin-prettier": "4.2.1",
+        "husky": "8.0.3",
+        "lint-staged": "13.2.2",
         "nodemon": "2.0.22",
         "prettier": "2.8.8",
         "ts-node": "10.9.1",

@@ -25,10 +25,7 @@ class App {
 
     private routes(): void {
         // const routes = new Routes().getRoutes();
-        routes.forEach(({
-            path,
-            router,
-        }: Routes) => {
+        routes.forEach(({ path, router, }: Routes) => {
             this.app.use(`/api/v1/${path}`, router);
         });
         // this.app.use('/', routes);
