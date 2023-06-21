@@ -3,7 +3,7 @@ import { AnyZodObject, ZodError, ZodIssue } from 'zod';
 
 export const schemaValidator =
     (schema: AnyZodObject) =>
-        (request: Request, response: Response, next: NextFunction): void => {
+        (request: Request, response: Response, next: NextFunction): void  => {
     try {
         const validator = schema.parse({
             body: request.body,
@@ -11,7 +11,7 @@ export const schemaValidator =
             query: request.query,
         });
         console.log({ validator });
-        return next();
+        next();
     } catch (err) {
         if (err instanceof ZodError) {
             console.log(err);
